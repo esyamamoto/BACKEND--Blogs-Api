@@ -18,4 +18,24 @@ const userService = async ({ displayName, email, password, image }) => {
   }
 };
 
-module.exports = userService;
+const userServiceFind = async () => {
+  try {
+    const userFind = await db.User.findAll({ attributes: { exclude: ['password'] } });
+    return { status: 200, data: userFind };
+  } catch (error) {
+    console.error('Error retrieving users:', error);
+    return { status: 500, data: 'Internal Server Error' };
+  }
+};
+
+const userServiceFindById = async (id) => {
+  const userFindId = await db.User
+    .findOne({ where: id, attributes: { exclude: ['password'] } });
+  return { status: 200, data: userFindId };
+};
+
+module.exports = {
+  userService,
+  userServiceFind,
+  userServiceFindById,
+};
