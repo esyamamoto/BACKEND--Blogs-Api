@@ -8,6 +8,8 @@ const {
   userControllerFindById } = require('./controller/userController');
 const { tokenOK } = require('./middlewares/validateToken');
 const { categoryController, controllerCategoryFind } = require('./controller/categoryController');
+const { postOK } = require('./middlewares/validatePost');
+const { postController } = require('./controller/postController');
 
 const app = express();
 
@@ -24,6 +26,8 @@ app.get('/user/:id', tokenOK, userControllerFindById);
 app.post('/categories', tokenOK, categoryController);
 
 app.get('/categories', tokenOK, controllerCategoryFind);
+
+app.post('/post', tokenOK, postOK, postController);
 
 // não remova ou mova esse endpoint
 app.get('/', (_request, response) => {

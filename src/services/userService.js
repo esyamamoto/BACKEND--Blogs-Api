@@ -1,5 +1,6 @@
 const db = require('../models');
 
+// criar um novo usuário
 const userService = async ({ displayName, email, password, image }) => {
   try {
     if (password.length < 6) { 
@@ -18,6 +19,7 @@ const userService = async ({ displayName, email, password, image }) => {
   }
 };
 
+// pega todos os usuários exclude a senha
 const userServiceFind = async () => {
   try {
     const userFind = await db.User.findAll({ attributes: { exclude: ['password'] } });
@@ -28,6 +30,7 @@ const userServiceFind = async () => {
   }
 };
 
+// pega um usuário pelo ID exclude a senha)
 const userServiceFindById = async (id) => {
   const userFindId = await db.User
     .findOne({ where: id, attributes: { exclude: ['password'] } });

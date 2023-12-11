@@ -23,7 +23,12 @@ const categoryServiceFind = async (name) => {
   }
 };
 
+// --------------------------------------------------------------------------------
+// vai pro validatePost.js
+const categoryIdService = async (id) => connection.Category.findOne({ where: { id } });
+
 module.exports = {
   categoryServiceCreated,
   categoryServiceFind,
+  categoryIdService,
 };
