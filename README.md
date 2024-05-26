@@ -1,10 +1,32 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Projeto API de Blogs
+
+
+<details>
+<summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
+Projeto de montar uma API e um banco de dados para a produção de conteúdo para um blog
+
+ </details>
+
+<details>
+  <summary><strong>:memo: Tecnologias Utilizadas:</strong></summary><br />
+
+- Insomnia
+- Node.js 
+- CRUD
+- ORM
+</details> 
+
+<details>
+  <summary><strong>:memo: Habilidades Desenvolvidas:</strong></summary><br />
+
+- endpoints que estãO conectados ao banco de dados seguindo os princípios do REST;
+
+- Fazer post é necessário usuário e login, portanto trabalhei a relação entre user e post;
+
+</details>
+
+<details>
+ <summary>API de Cotações</summary>
+  <a href="https://docs.awesomeapi.com.br/api-de-moedas">Documentação da API de Moedas</a>
+</details>
+
