@@ -24,9 +24,3 @@ Projeto de montar uma API e um banco de dados para a produção de conteúdo par
 - Fazer post é necessário usuário e login, portanto trabalhei a relação entre user e post;
 
 </details>
-
-<details>
- <summary>API de Cotações</summary>
-  <a href="https://docs.awesomeapi.com.br/api-de-moedas">Documentação da API de Moedas</a>
-</details>
-
