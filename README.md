@@ -8,12 +8,14 @@ Projeto de montar uma API e um banco de dados para a produção de conteúdo par
  </details>
 
 <details>
-  <summary><strong>:memo: Tecnologias Utilizadas:</strong></summary><br />
+  <summary><strong>:memo: Utilizadas:</strong></summary><br />
 
 - Insomnia
 - Node.js 
 - CRUD
 - ORM
+- Node.js
+  
 </details> 
 
 <details>
@@ -22,5 +24,9 @@ Projeto de montar uma API e um banco de dados para a produção de conteúdo par
 - endpoints que estãO conectados ao banco de dados seguindo os princípios do REST;
 
 - Fazer post é necessário usuário e login, portanto trabalhei a relação entre user e post;
+  
+- Autenticas pessoas usuarias atraves do JWT
+- 
+- API RESTful utilizando JWT e ORM SEQUELIZE
 
 </details>
